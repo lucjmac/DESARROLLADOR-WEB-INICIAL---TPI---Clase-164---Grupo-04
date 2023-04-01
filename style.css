@@ -65,21 +65,31 @@
   
   /* Estilo de Seccion "clubAmigos" */
   .clubAmigos {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 80px;
+    background-image: url(Imagenes/Sin\ título2.png);
+    background-size: cover; 
+    background-position: center;
   }
   
+  .logoVINO img {
+    width: 40px;
+  }
+   
+  
   .club-de-amigos {
-    max-width: 600px;
-    width: calc(100% - 600px);
-    margin-right: 40px;
+    max-width: 100%;
+    width: calc(100% - 60px);
+    margin-bottom: 40px;
   }
   
   .club-de-amigos h1 {
-    font-size: 58px;
+    font-size: 65px;
     margin-bottom: 20px;
+    color: #fff;
   }
   
   .club-de-amigos-titulo {
@@ -94,39 +104,72 @@
     border: none;
     padding: 10px 20px;
     font-size: 12px;
-    width: 33.33%;
+    width: 15%;
     margin-top: 20px;
   }
   
   .club-de-amigos-p {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    max-width: 800px;
+    max-width: 100%;
+    
   }
   
   .club-de-amigos-p p {
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 10px;
-    text-align: right;
-    margin-left: auto;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Estilo de Seccion "clubAmigos" en pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    .clubAmigos {
+      padding: 40px;
+    }
+    
+    .club-de-amigos {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    
+    .club-de-amigos button {
+      width: 100%;
+    }
+    
+    .club-de-amigos-p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .club-de-amigos-p p {
+      margin-left: 0;
+      text-align: center;
+    }
   }
   
   
   /* Estilo de Seccion "nuestrosVinos" */
   .nuestrosVinos {
-    padding: 80px;
+    margin-top: 0;
     text-align: center;
+    background-color: #fff; 
+    margin-bottom: 0; 
   }
   
   .nuestrosVinos-grilla {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-image: url(Imagenes/Sin\ título3.png);
+    background-size: cover; 
+    background-position: center;
+    width: 100%; 
   }
 
   .nuestrosVinos h2 {
     margin-bottom: 60px;
+    color: #fff;
   }
   
   .nuestrosVinos {
@@ -139,17 +182,18 @@
   }
   
   .vinos img {
-    width: 100%;
+    width: 200px;
     height: auto;
     margin-bottom: 10px;
   }
   .vinos h3 {
     margin-bottom: 20px;
+    color: #fff;
   }
   
   .vinos p {
     font-size: 14px;
-    color: #666;
+    color: #fff;
   }
   
   
