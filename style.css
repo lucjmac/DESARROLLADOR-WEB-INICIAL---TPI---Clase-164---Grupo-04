@@ -1,0 +1,155 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Estilo del header */
+  header {
+    background-color: #4a4949;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header p {
+    margin-left: 30px;
+    color:#fff;
+    font-size: 25px;
+
+  }
+  
+  nav {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    display: inline-block;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #ffffff;
+  }
+  
+  
+  /* Estilo de Seccion "clubAmigos" */
+  .clubAmigos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+  }
+  
+  .club-de-amigos {
+    max-width: 600px;
+    width: calc(100% - 600px);
+    margin-right: 40px;
+  }
+  
+  .club-de-amigos h1 {
+    font-size: 58px;
+    margin-bottom: 20px;
+  }
+  
+  .club-de-amigos-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .club-de-amigos button {
+    background-color: #4a4949;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    width: 33.33%;
+    margin-top: 20px;
+  }
+  
+  .club-de-amigos-p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 800px;
+  }
+  
+  .club-de-amigos-p p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: right;
+    margin-left: auto;
+  }
+  
+  
+  /* Estilo de Seccion "nuestrosVinos" */
+  .nuestrosVinos {
+    padding: 80px;
+    text-align: center;
+  }
+  
+  .nuestrosVinos-grilla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .nuestrosVinos h2 {
+    margin-bottom: 60px;
+  }
+  
+  .nuestrosVinos {
+    text-align: center;
+  }
+  
+  .vinos {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  .vinos img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .vinos h3 {
+    margin-bottom: 20px;
+  }
+  
+  .vinos p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  
