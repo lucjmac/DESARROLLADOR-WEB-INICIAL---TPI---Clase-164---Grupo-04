@@ -1,66 +1,90 @@
 /* Estilo general */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-  }
-  
-  /* Estilo del header */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Estilo del header */
+header {
+  background-color: #4a4949;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header p {
+  margin-left: 30px;
+  color:#fff;
+  font-size: 25px;
+
+}
+
+nav {
+  margin-right: 20px;
+}
+
+nav a {
+  display: inline-block;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+
+/* Estilo del header en pantallas chicas */
+@media screen and (max-width: 768px) {
   header {
-    background-color: #4a4949;
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
   
   header p {
-    margin-left: 30px;
-    color:#fff;
-    font-size: 25px;
-
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
   }
   
   nav {
-    margin-right: 20px;
-  }
-  
-  nav a {
-    display: inline-block;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
+    margin: 0;
+    margin-top: 10px;
   }
   
   nav ul li {
-    margin-left: 20px;
+    margin: 10px 0;
   }
-  
-  nav ul li:first-child {
-    margin-left: 0;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-  }
-  
-  nav ul li a:hover {
-    color: #ffffff;
-  }
+}
+
   
   
   /* Estilo de Seccion "clubAmigos" */
@@ -76,7 +100,9 @@
   }
   
   .logoVINO img {
-    width: 150px;
+    width: 130px;
+    margin-top: 10px;
+    border-radius: 100%;
   }
    
   
@@ -150,50 +176,75 @@
   
   
   /* Estilo de Seccion "nuestrosVinos" */
-  .nuestrosVinos {
-    margin-top: 0;
-    text-align: center;
-    background-color: #fff; 
-    margin-bottom: 0; 
-  }
-  
+.nuestrosVinos {
+  margin-top: 0;
+  margin-bottom: 0; 
+  background-color: #fff;
+  background-size: cover; 
+  background-position: center;
+}
+
+.nuestrosVinos-grilla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%; 
+}
+
+.nuestrosVinos h2 {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  color: #4a4949;
+}
+
+.nuestrosVinos {
+  text-align: center;
+}
+
+.vinos {
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
+
+.vinos img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.vinos h3 {
+  padding-top: 15px;
+  margin-bottom: 20px;
+  color: #4a4949;
+}
+
+.vinos p {
+  font-size: 14px;
+  color: #4a4949;
+  text-align: justify;
+  padding: 20px;
+}
+
+/* Estilos de Seccion "nuestrosVinos" para pantallas más chicas */
+@media (max-width: 768px) {
   .nuestrosVinos-grilla {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-image: url(./Imagenes/bodega.jpg);
-    background-size: cover; 
-    background-position: center;
-    width: 100%; 
+    justify-content: center;
   }
 
-  .nuestrosVinos h2 {
-    margin-bottom: 60px;
-    color: #fff;
-  }
-  
-  .nuestrosVinos {
-    text-align: center;
-  }
-  
   .vinos {
-    flex-basis: calc(33.33% - 10px);
-    margin-bottom: 20px;
+    flex-basis: calc(50% - 10px);
   }
-  
-  .vinos img {
-    width: 200px;
-    height: auto;
-    margin-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+  .vinos {
+    flex-basis: 100%;
   }
-  .vinos h3 {
-    margin-bottom: 20px;
-    color: #fff;
-  }
-  
+
   .vinos p {
-    font-size: 14px;
-    color: #fff;
+    font-size: 12px;
   }
+}
+
   
   
