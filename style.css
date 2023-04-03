@@ -70,13 +70,13 @@
     flex-direction: column;
     align-items: center;
     padding: 80px;
-    background-image: url(Imagenes/Sin\ título2.png);
+    background-image: url(./Imagenes/copas\ de\ vino.jpg);
     background-size: cover; 
     background-position: center;
   }
   
   .logoVINO img {
-    width: 40px;
+    width: 150px;
   }
    
   
@@ -161,7 +161,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-image: url(Imagenes/Sin\ título3.png);
+    background-image: url(./Imagenes/bodega.jpg);
     background-size: cover; 
     background-position: center;
     width: 100%; 
