@@ -393,58 +393,61 @@ nav ul li a:hover {
     }
   }
 
+  /* Estilos para los elementos de Vino */
 
-  .Vino {
-    margin-top: 0;
-    margin-bottom: 0; 
-    background-color: #fff;
-    background-size: cover; 
-    background-position: center;
+.Vinos2 {
+  padding: 3%;
   }
   
-  .vino-grilla {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content:left;
-    width: 100%; 
-    
-  }
-  
-  .vino h2 {
-    margin-top: 40px;
-    margin-bottom: 60px;
-    color: #4a4949;
-  }
-  
-  .vino {
-    text-align:left;
-  }
-  
-  .vino {
-    flex-basis: calc(33.33% - 10px);
-    margin-bottom: 20px;
-  }
-  
-  .vino img {
-    width: 50%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 90px;
-      box-shadow: 5px 8px 12px black;
-  }
-  
-  .vino h3 {
-    padding-top: 15px;
-    margin-bottom: 20px;
-    color: #4a4949;
-  }
-  
-  .vino p {
-    font-size: 14px;
-    color: #4a4949;
-    text-align: right;
-    padding: 20px;
-  }
+.vino {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.vino img {
+  width: 40%;
+  margin-right: 20px;
+  border-radius: 15%;
+  box-shadow: 5px 8px 12px black;
+}
+
+/* Estilos para los títulos de Vino */
+.Vinos2 h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #4a4949;
+}
+
+.Vinos2 h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #4a4949;
+}
+
+/* Estilos para los párrafos de Vino */
+.Vinos2 .h3-p p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Estilos específicos para cada elemento de vino */
+#h3-p-vinoBlanco p {
+  color:#4a4949;
+}
+
+#h3-p-vinotinto p {
+  color:#4a4949;
+}
+
+#h3-p-vinorosado p {
+  color:#4a4949;
+}
+
+
   
   .formulario {
     width: 500px;
