@@ -1,0 +1,448 @@
+/* Estilo general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Estilo del header */
+header {
+  background-color: #4a4949;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header p {
+  margin-left: 30px;
+  color:#fff;
+  font-size: 25px;
+
+}
+
+nav {
+  margin-right: 20px;
+}
+
+nav a {
+  display: inline-block;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+
+/* Estilo del header en pantallas chicas */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  header p {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  nav {
+    margin: 0;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+  
+  
+  /* Estilo de Seccion "clubAmigos" */
+  .clubAmigos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    background-image: url(./Imagenes/copas\ de\ vino.jpg);
+    background-size: cover; 
+    background-position: center;
+  }
+  
+  .logoVINO img {
+    width: 130px;
+    margin-top: 10px;
+    border-radius: 100%;
+  }
+   
+  
+  .club-de-amigos {
+    max-width: 100%;
+    width: calc(100% - 60px);
+    margin-bottom: 40px;
+  }
+  
+  .club-de-amigos h1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .club-de-amigos-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .club-de-amigos button {
+    background-color: #4a4949;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    width: 15%;
+    margin-top: 20px;
+  }
+  
+  .club-de-amigos-p {
+    max-width: 100%;
+    
+  }
+  
+  .club-de-amigos-p p {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Estilo de Seccion "clubAmigos" en pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    .clubAmigos {
+      padding: 40px;
+    }
+    
+    .club-de-amigos {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    
+    .club-de-amigos button {
+      width: 100%;
+    }
+    
+    .club-de-amigos-p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .club-de-amigos-p p {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
+  
+  /* Estilo de Seccion "nuestrosVinos" */
+.nuestrosVinos {
+  margin-top: 0;
+  margin-bottom: 0; 
+  background-color: #fff;
+  background-size: cover; 
+  background-position: center;
+}
+
+.nuestrosVinos-grilla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%; 
+  
+}
+
+.nuestrosVinos h2 {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  color: #4a4949;
+}
+
+.nuestrosVinos {
+  text-align: center;
+}
+
+.vinos {
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
+
+.vinos img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+}
+
+.vinos h3 {
+  padding-top: 15px;
+  margin-bottom: 20px;
+  color: #4a4949;
+}
+
+.vinos p {
+  font-size: 14px;
+  color: #4a4949;
+  text-align: justify;
+  padding: 20px;
+}
+
+/* Estilos de Seccion "nuestrosVinos" para pantallas más chicas */
+@media (max-width: 768px) {
+  .nuestrosVinos-grilla {
+    justify-content: center;
+  }
+
+  .vinos {
+    flex-basis: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 576px) {
+  .vinos {
+    flex-basis: 100%;
+  }
+
+  .vinos p {
+    font-size: 12px;
+  }
+}
+
+  /* Estilo de Seccion "Nostros" */
+
+
+.nosotros {
+    text-align: center;
+  }
+  
+  .container img {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .container {
+    width: 1900px;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 5px 8px 12px black;
+  }
+  
+  
+  
+  .container p {
+    font-size: 20px;
+    color: white;
+    position:absolute;
+    top: 10%;
+    left: 0%;
+    transform: translate (-50%, -50%);
+    text-shadow: 0 0 8px rgba(red, green, blue, alpha);
+     
+  }
+  
+  
+
+  
+  
+  /* Estilo de Seccion "Nosotros" en pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    .Nosotros {
+      padding: 40px;
+    }
+    
+    .nosotros {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    
+    .nosotros-button {
+      width: 100%;
+    }
+    
+    .nosotros-p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .nosotros-p {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
+
+
+
+  .nuestrafinca {
+    margin-top: 0;
+    margin-bottom: 0; 
+    background-color: #fff;
+    background-size: cover; 
+    background-position: center;
+  }
+  
+  .nuestrafinca-grilla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; 
+    
+  }
+  
+  .nuestrafinca {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    color: #4a4949;
+  }
+  
+  .nuestrafinca  {
+    text-align: center;
+  }
+  
+  .nuestrafinca {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  .nuestrafinca img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 60px;
+      box-shadow: 5px 8px 12px black;
+  }
+  
+  .nuestrafinca {
+    padding-top: 15px;
+    margin-bottom: 20px;
+    color: #4a4949;
+  }
+  
+  .nuestrafinca p {
+    font-size: 14px;
+    color: #4a4949;
+    text-align:center;
+    padding: 20px;
+  }
+  
+  /* Estilos de Seccion "nuestrafinca" para pantallas más chicas */
+  @media (max-width: 768px) {
+    .nuestrafinca-grilla {
+      justify-content: center;
+    }
+  
+    .nuestrafinca {
+      flex-basis: calc(50% - 10px);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .nuestrafinca {
+      flex-basis: 100%;
+    }
+  
+    .nuestrafinca p {
+      font-size: 12px;
+    }
+  }
+
+
+  .Vino {
+    margin-top: 0;
+    margin-bottom: 0; 
+    background-color: #fff;
+    background-size: cover; 
+    background-position: center;
+  }
+  
+  .vino-grilla {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:left;
+    width: 100%; 
+    
+  }
+  
+  .vino h2 {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    color: #4a4949;
+  }
+  
+  .vino {
+    text-align:left;
+  }
+  
+  .vino {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  .vino img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 90px;
+      box-shadow: 5px 8px 12px black;
+  }
+  
+  .vino h3 {
+    padding-top: 15px;
+    margin-bottom: 20px;
+    color: #4a4949;
+  }
+  
+  .vino p {
+    font-size: 14px;
+    color: #4a4949;
+    text-align: right;
+    padding: 20px;
+  }
+  
