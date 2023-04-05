@@ -189,6 +189,7 @@ nav ul li a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%; 
+  
 }
 
 .nuestrosVinos h2 {
@@ -210,6 +211,8 @@ nav ul li a:hover {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
+  border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
 }
 
 .vinos h3 {
@@ -246,5 +249,200 @@ nav ul li a:hover {
   }
 }
 
+  /* Estilo de Seccion "Nostros" */
+
+
+.nosotros {
+    text-align: center;
+  }
   
+  .container img {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .container {
+    width: 1900px;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 5px 8px 12px black;
+  }
+  
+  
+  
+  .container p {
+    font-size: 20px;
+    color: white;
+    position:absolute;
+    top: 10%;
+    left: 0%;
+    transform: translate (-50%, -50%);
+    text-shadow: 0 0 8px rgba(red, green, blue, alpha);
+     
+  }
+  
+  
+
+  
+  
+  /* Estilo de Seccion "Nosotros" en pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    .Nosotros {
+      padding: 40px;
+    }
+    
+    .nosotros {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    
+    .nosotros-button {
+      width: 100%;
+    }
+    
+    .nosotros-p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .nosotros-p {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
+
+
+
+  .nuestrafinca {
+    margin-top: 0;
+    margin-bottom: 0; 
+    background-color: #fff;
+    background-size: cover; 
+    background-position: center;
+  }
+  
+  .nuestrafinca-grilla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; 
+    
+  }
+  
+  .nuestrafinca {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    color: #4a4949;
+  }
+  
+  .nuestrafinca  {
+    text-align: center;
+  }
+  
+  .nuestrafinca {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  .nuestrafinca img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 60px;
+      box-shadow: 5px 8px 12px black;
+  }
+  
+  .nuestrafinca {
+    padding-top: 15px;
+    margin-bottom: 20px;
+    color: #4a4949;
+  }
+  
+  .nuestrafinca p {
+    font-size: 14px;
+    color: #4a4949;
+    text-align:center;
+    padding: 20px;
+  }
+  
+  /* Estilos de Seccion "nuestrafinca" para pantallas más chicas */
+  @media (max-width: 768px) {
+    .nuestrafinca-grilla {
+      justify-content: center;
+    }
+  
+    .nuestrafinca {
+      flex-basis: calc(50% - 10px);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .nuestrafinca {
+      flex-basis: 100%;
+    }
+  
+    .nuestrafinca p {
+      font-size: 12px;
+    }
+  }
+
+
+  .Vino {
+    margin-top: 0;
+    margin-bottom: 0; 
+    background-color: #fff;
+    background-size: cover; 
+    background-position: center;
+  }
+  
+  .vino-grilla {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:left;
+    width: 100%; 
+    
+  }
+  
+  .vino h2 {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    color: #4a4949;
+  }
+  
+  .vino {
+    text-align:left;
+  }
+  
+  .vino {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  .vino img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 90px;
+      box-shadow: 5px 8px 12px black;
+  }
+  
+  .vino h3 {
+    padding-top: 15px;
+    margin-bottom: 20px;
+    color: #4a4949;
+  }
+  
+  .vino p {
+    font-size: 14px;
+    color: #4a4949;
+    text-align: right;
+    padding: 20px;
+  }
   
