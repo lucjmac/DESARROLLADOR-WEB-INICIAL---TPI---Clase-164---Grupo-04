@@ -243,7 +243,7 @@ nav ul li a:hover {
 }
 
 .vinos p {
-  font-size: 14px;
+  font-size: 16px;
   color: #4a4949;
   text-align: justify;
   padding: 20px;
@@ -277,7 +277,9 @@ nav ul li a:hover {
     text-align: center;
     color: #640101;
     margin-bottom: 60px;
-    margin-top: 40px;
+    margin-top:50px;
+    margin-bottom: -2%;
+
     
   
   }
@@ -302,13 +304,15 @@ nav ul li a:hover {
   
   
   .container p {
-    font-size: 20px;
+    font-size: 25px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
     color: white;
     position:absolute;
-    top: 10%;
-    left: 0%;
-    transform: translate (-50%, -50%);
-    text-shadow: 0 0 8px rgba(red, green, blue, alpha);
+    top: 5%;
+    left: 05%;
+    right: 05%;
+    
      
   }
   
@@ -388,7 +392,7 @@ nav ul li a:hover {
   }
   
   .nuestrafinca p {
-    font-size: 14px;
+    font-size: 16px;
     color: #4a4949;
     text-align:center;
     padding: 20px;
