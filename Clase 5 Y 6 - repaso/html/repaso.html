@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Repaso</title>
+    <link rel="stylesheet" type="text/css" href="../css/repaso.css"/>
+    <script type="text/javascript" src="../javascript/repaso.js"></script>
+</head>
+<body>
+
+<div class="contenedor">
+    <div>
+        <h1>Formulario persona</h1>
+    </div>
+
+    <div class="contenedor-flex">
+        <div class="input-form">
+            <label for="nombre-usuario">Ingrese el nombre</label>
+            <input type="text" id="nombre-usuario">
+        </div>
+        <div class="input-form">
+            <label for="apellido-usuario">Ingrese su apellido</label>
+            <input type="text" id="apellido-usuario">
+        </div>
+        <div class="input-form">
+            <label for="combo-sexo">Ingrese sexo</label>
+            <select id="combo-sexo">
+                <option value="" selected>Seleccione</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
+            </select>
+        </div>
+        <div class="input-form">
+            <label for="tipo-documento">Ingrese su tipo de documento</label>
+            <select id="tipo-documento">
+                <option value="">Seleccione</option>
+                <option value="DNI">DNI</option>
+                <option value="Pasaporte">Pasaporte</option>
+                <option value="Libreta">Libreta enrolamiento</option>
+            </select>
+        </div>
+        <div class="input-form">
+            <label for="dni-usuario">Ingrese su numero de documento</label>
+            <input type="text" id="dni-usuario">
+        </div>
+        <div class="input-form">
+            <label for="telefono-usuario">Ingrese su numero de telefono</label>
+            <input type="text" id="telefono-usuario">
+        </div>
+    </div>
+
+    <div class="boton">
+        <button id="boton-agregar-persona" type="button" onclick="agregarPersona()">Cargar persona</button>
+    </div>
+</div>
+
+<div class="">
+    <table id="tabla">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Sexo</th>
+            <th>Tipo documento</th>
+            <th>Documento</th>
+            <th>Telefono</th>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
