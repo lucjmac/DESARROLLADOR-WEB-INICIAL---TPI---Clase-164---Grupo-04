@@ -16,9 +16,11 @@
         
     <nav>  
         <ul>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Nuestros Vinos </a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#nuestrosVinos">Nuestros Vinos </a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#nuestraFinca">Nuestra Finca</a></li>
+          <li><a href="#vinos">Vinos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
   </header>
@@ -40,13 +42,13 @@
           <p>el placer de una buena copa</p>
         </div>
          <div class="boton-asociate">
-          <button>¡ASOCIATE AHORA!</button>
+          <button type="submit" form="contacto">ASOCIATE AHORA!</button>
          </div>
       </div>
     </section>
     
 
-    <section class="nuestrosVinos">
+    <section class="nuestrosVinos" id="nuestrosVinos">
       <h2>NUESTROS VINOS</h2>
       <div class="nuestrosVinos-grilla">
         <div class="vinos" id="vinosBlancos">
@@ -69,7 +71,7 @@
     </section>
 
     <section class="nosotros">
-    <h1>NOSOTROS</h1>
+    <h1 id="nosotros">NOSOTROS</h1>
     <section class="container">
       <div class="Nuestra-bodega">
         <div class="container-p">
@@ -85,7 +87,7 @@
 
 
 
-    <section class="nuestrafinca">
+    <section class="nuestrafinca" id="nuestraFinca">
       <h1>NUESTRA FINCA</h1>
       <p>En la visita se puede caminar entre los viñedos y se recorre el interior por pasarelas aéreas desde las que se visualiza cada área de producción así como el paisaje exterior. 
  Al final de la visita hay una degustación y la posibilidad de comprar nuestros Vinos. Tambien puedes asociarte al Club de 
@@ -121,7 +123,7 @@
 
 
 
-    <section class="Vinos2">
+    <section class="Vinos2" id="vinos">
       <h2>VINOS</h2>
       <div class="Vino-grilla">
         <div class="vino" id="vinoBlanco">
@@ -186,8 +188,8 @@
       </div>
     </section>
 
-    <form action="" class="formulario">
-      <h1 class="formulario__titulo">Contáctenos</h1>
+    <form action="#contacto" class="formulario" id="contacto">
+      <h1 class="formulario__titulo" >Contacto</h1>
       
       <p>
         <input type="text" class="formulario__input" required>
