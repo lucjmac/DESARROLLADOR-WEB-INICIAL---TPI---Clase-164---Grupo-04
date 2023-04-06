@@ -6,13 +6,13 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Helvetica;
   font-size: 16px;
 }
 
 /* Estilo del header */
 header {
-  background-color: #4a4949;
+  background-color: #640101;
   padding: 20px;
   position: fixed;
   top: 0;
@@ -99,43 +99,63 @@ nav ul li a:hover {
     background-position: center;
   }
   
-  .logoVINO img {
-    width: 130px;
-    margin-top: 10px;
-    border-radius: 100%;
-  }
+  
    
+  .logoVINO2 img {
+    width: 130px;
+    margin-left: 100px;
+    border-radius: 100%;
+
+  }
   
   .club-de-amigos {
     max-width: 100%;
     width: calc(100% - 60px);
     margin-bottom: 40px;
+   
   }
   
   .club-de-amigos h1 {
     font-size: 65px;
     margin-bottom: 20px;
-    color: #fff;
+    color: rgb(255, 255, 255);
+   font-family: Arial, Helvetica, sans-serif;
+  
   }
   
   .club-de-amigos-titulo {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
   }
   
   .club-de-amigos button {
-    background-color: #4a4949;
+    background-color: #640101;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-size: 12px;
-    width: 15%;
+    padding: 10px 50px;
+    font-size: 15px;
+    width: 100%;
     margin-top: 20px;
   }
   
+  .boton-asociate{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+        border-radius: 05%;
+}
+.boton-asociate:hover
+  {
+    box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    -moz-transform:translate(0px,5px);
+}
   .club-de-amigos-p {
     max-width: 100%;
+    font-weight:bold ;
     
   }
   
@@ -144,6 +164,7 @@ nav ul li a:hover {
     margin-bottom: 10px;
     text-align: center;
     color: #fff;
+    
   }
   
   /* Estilo de Seccion "clubAmigos" en pantallas pequeñas */
@@ -195,7 +216,7 @@ nav ul li a:hover {
 .nuestrosVinos h2 {
   margin-top: 40px;
   margin-bottom: 60px;
-  color: #4a4949;
+  color: #640101;
 }
 
 .nuestrosVinos {
@@ -212,7 +233,7 @@ nav ul li a:hover {
   height: auto;
   margin-bottom: 10px;
   border-radius: 20px;
-    box-shadow: 5px 8px 12px black;
+    box-shadow: 5px 8px 12px rgb(56, 8, 8);
 }
 
 .vinos h3 {
@@ -252,8 +273,13 @@ nav ul li a:hover {
   /* Estilo de Seccion "Nostros" */
 
 
-.nosotros {
+.nosotros h1 {
     text-align: center;
+    color: #640101;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    
+  
   }
   
   .container img {
@@ -269,7 +295,8 @@ nav ul li a:hover {
     position: relative;
     margin: 100px auto;
     border-radius: 10px;
-    box-shadow: 5px 8px 12px black;
+    box-shadow: 5px 8px 12px rgb(58, 9, 9);
+    border-color: #640101;
   }
   
   
@@ -295,15 +322,8 @@ nav ul li a:hover {
       padding: 40px;
     }
     
-    .nosotros {
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
     
-    .nosotros-button {
-      width: 100%;
-    }
+    
     
     .nosotros-p {
       display: flex;
@@ -312,7 +332,7 @@ nav ul li a:hover {
     }
     
     .nosotros-p {
-      margin-left: 0;
+      margin-left:auto ;
       text-align: center;
     }
   }
@@ -356,13 +376,15 @@ nav ul li a:hover {
     height: auto;
     margin-bottom: 10px;
     border-radius: 60px;
-      box-shadow: 5px 8px 12px black;
+      box-shadow: 5px 8px 12px rgb(54, 9, 9);
   }
   
   .nuestrafinca {
     padding-top: 15px;
-    margin-bottom: 20px;
-    color: #4a4949;
+    color: #640101;
+    font-size: 1rem;
+  text-align: center;
+  margin-bottom: 50px;
   }
   
   .nuestrafinca p {
@@ -370,6 +392,7 @@ nav ul li a:hover {
     color: #4a4949;
     text-align:center;
     padding: 20px;
+    
   }
   
   /* Estilos de Seccion "nuestrafinca" para pantallas más chicas */
@@ -396,55 +419,59 @@ nav ul li a:hover {
   /* Estilos para los elementos de Vino */
 
 .Vinos2 {
-  padding: 3%;
+  padding: 5%;
   }
   
 .vino {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   margin-bottom: 50px;
+  background-size:contain; 
+    background-position: center;
+    background-color: #640101;
+    border-radius: 1%;
+  box-shadow: 5px 8px 5px black;
+   
 }
 
 .vino img {
-  width: 40%;
-  margin-right: 20px;
-  border-radius: 15%;
-  box-shadow: 5px 8px 12px black;
+  width: 20%;
+  margin-right: 30px;
+  box-shadow: 5px 0px 5px black;
 }
 
 /* Estilos para los títulos de Vino */
 .Vinos2 h2 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   text-align: center;
   margin-bottom: 50px;
-  color: #4a4949;
+  color: #640101;
 }
 
 .Vinos2 h3 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: #4a4949;
+  color: #ffffff;
 }
 
 /* Estilos para los párrafos de Vino */
 .Vinos2 .h3-p p {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   line-height: 1.5;
-  text-align: justify;
+  text-align:center;
 }
 
 /* Estilos específicos para cada elemento de vino */
 #h3-p-vinoBlanco p {
-  color:#4a4949;
+  color:#ffffff;
 }
 
 #h3-p-vinotinto p {
-  color:#4a4949;
+  color:#ffffff;
 }
 
 #h3-p-vinorosado p {
-  color:#4a4949;
+  color:#ffffff;
 }
 
 
