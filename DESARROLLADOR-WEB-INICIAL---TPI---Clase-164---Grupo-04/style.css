@@ -13,7 +13,8 @@ body {
 /* Estilo del header */
 header {
   background-color: #640101;
-  padding: 20px;
+  padding-top: 2%;
+  padding-bottom: 2%;
   position: fixed;
   top: 0;
   left: 0;
@@ -25,14 +26,14 @@ header {
 }
 
 header p {
-  margin-left: 30px;
+  margin-left: 2%;
   color:#fff;
   font-size: 25px;
 
 }
 
 nav {
-  margin-right: 20px;
+  margin-right: 2%;
 }
 
 nav a {
@@ -88,6 +89,7 @@ nav ul li a:hover {
   
   
   /* Estilo de Seccion "clubAmigos" */
+  
   .clubAmigos {
     width: 100%;
     display: flex;
@@ -102,9 +104,11 @@ nav ul li a:hover {
   
    
   .logoVINO2 img {
+    margin-top: 4%;
+    margin-bottom: 2%;
     width: 130px;
     margin-left: 100px;
-    border-radius: 100%;
+   
 
   }
   
@@ -134,7 +138,7 @@ nav ul li a:hover {
     background-color: #640101;
     color: #fff;
     border: none;
-    padding: 10px 50px;
+    padding: 2%  10%;
     font-size: 15px;
     width: 100%;
     margin-top: 20px;
@@ -142,13 +146,13 @@ nav ul li a:hover {
   
   .boton-asociate{
     transition: .5s, color .10s;
-        -webkit-transition: .5s, color .10s;
-        -moz-transition: .5s, color .10s;
-        border-radius: 05%;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+    
 }
-.boton-asociate:hover
-  {
-    box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+
+.boton-asociate:hover {
+    box-shadow: 0 8px 8px 0 #8f4747;
     transform: translate(0px,5px);
     -webkit-transform: translate(0px,5px);
     -moz-transform:translate(0px,5px);
@@ -203,8 +207,7 @@ nav ul li a:hover {
   }
   
 .nuestrosVinos {
-  margin-top: 0;
-  margin-bottom: 0; 
+  padding-top: 4%;
   background-color: #fff;
   background-size: cover; 
   background-position: center;
@@ -213,13 +216,15 @@ nav ul li a:hover {
 .nuestrosVinos-grilla {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 1%;
+  padding-right: 1%;
   justify-content: space-between;
   width: 100%; 
   
 }
 
 .nuestrosVinos h2 {
-  margin-top: 40px;
+  margin-top: 3%;
   margin-bottom: 60px;
   color: #640101;
 }
@@ -237,19 +242,18 @@ nav ul li a:hover {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
-  border-radius: 20px;
-    box-shadow: 5px 8px 12px rgb(56, 8, 8);
+  
 }
 
 .vinos h3 {
   padding-top: 15px;
   margin-bottom: 20px;
-  color: #4a4949;
+  color: #640101;
 }
 
 .vinos p {
   font-size: 16px;
-  color: #4a4949;
+  color: #640101;
   text-align: justify;
   padding: 20px;
 }
@@ -277,48 +281,44 @@ nav ul li a:hover {
 
   /* Estilo de Seccion "Nostros" */
 
-
+  #nosotros {
+    scroll-behavior: smooth;
+  }
 .nosotros h1 {
+  margin-top: 3%;
     text-align: center;
     color: #640101;
-    margin-bottom: 60px;
-    margin-top:50px;
-    margin-bottom: -2%;
+     
 
-    
-  
   }
   
   .container img {
     width: 100%;
-    height: 100%;
+    height: 70%;
 
   }
 
   .container {
-    width: 1900px;
-    height: 700px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     position: relative;
-    margin: 100px auto;
-    border-radius: 10px;
-    box-shadow: 5px 8px 12px rgb(58, 9, 9);
-    border-color: #640101;
+    margin-top: 5%;
+    
   }
   
-  
-  
+   
   .container p {
     font-size: 25px;
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     color: white;
     position:absolute;
+    text-align: justify;
     top: 5%;
-    left: 05%;
-    right: 05%;
-    
-     
+    left: 5%;
+    right: 5%;
+        
   }
   
   
@@ -331,10 +331,7 @@ nav ul li a:hover {
       padding: 40px;
     }
     
-    
-    
-    
-    .nosotros-p {
+     .nosotros-p {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -347,16 +344,18 @@ nav ul li a:hover {
   }
   
 
-
-
-  .nuestrafinca {
-    margin-top: 0;
-    margin-bottom: 0; 
-    background-color: #fff;
-    background-size: cover; 
-    background-position: center;
+  #nuestraFinca {
+    scroll-behavior: smooth;
   }
-  
+  .nuestrafinca {
+    flex-basis: calc(33.33%);
+    background-color: #fff;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    color: #640101;
+  }
+
   .nuestrafinca-grilla {
     display: flex;
     flex-wrap: wrap;
@@ -364,43 +363,28 @@ nav ul li a:hover {
     width: 100%; 
     
   }
-  
-  .nuestrafinca {
-    margin-top: 40px;
-    margin-bottom: 60px;
-    color: #4a4949;
-  }
-  
-  .nuestrafinca  {
-    text-align: center;
-  }
-  
-  .nuestrafinca {
-    flex-basis: calc(33.33% - 10px);
-    margin-bottom: 20px;
-  }
-  
-  .nuestrafinca img {
+  .nuestrafinca2 {
+    flex-basis: calc(33.33%);
+    padding: 1%;
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
-    border-radius: 60px;
-      box-shadow: 5px 8px 12px rgb(54, 9, 9);
+    
   }
   
-  .nuestrafinca {
-    padding-top: 15px;
-    color: #640101;
-    font-size: 1rem;
-  text-align: center;
-  margin-bottom: 50px;
+    
+  .nuestrafinca img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1%;
+    
   }
   
+
   .nuestrafinca p {
     font-size: 16px;
-    color: #4a4949;
-    text-align:center;
-    padding: 20px;
+    color: #640101;
+    text-align:justify;
+    padding: 4%;
     
   }
   
@@ -425,10 +409,16 @@ nav ul li a:hover {
     }
   }
 
-  /* Estilos para los elementos de Vino */
+  /* Estilos para los elementos de Vinos */
+
+  
+  #vinos {
+    scroll-behavior: smooth;
+  }
 
 .Vinos2 {
   padding: 5%;
+  background-color: #640101;
   }
   
 .vino {
@@ -436,17 +426,15 @@ nav ul li a:hover {
   align-items: center;
   margin-bottom: 50px;
   background-size:contain; 
-    background-position: center;
-    background-color: #640101;
-    border-radius: 1%;
-  box-shadow: 5px 8px 5px rgb(56, 8, 8);
+  background-position: center;
+  background-color: white;
+
    
 }
 
 .vino img {
   width: 20%;
   margin-right: 30px;
-  box-shadow: 5px 0px 5px rgb(56, 8, 8);
 }
 
 /* Estilos para los títulos de Vino */
@@ -454,94 +442,81 @@ nav ul li a:hover {
   font-size: 1.8rem;
   text-align: center;
   margin-bottom: 50px;
-  color: #640101;
+  color: white;
 }
 
 .Vinos2 h3 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: #640101;
 }
 
 /* Estilos para los párrafos de Vino */
 .Vinos2 .h3-p p {
+  padding-left: 1%;
+  padding-right: 5%;
   font-size: 1.0rem;
-  line-height: 1.5;
-  text-align:center;
+  text-align: justify;
+  color: #640101;
 }
 
-/* Estilos específicos para cada elemento de vino */
-#h3-p-vinoBlanco p {
-  color:#ffffff;
-}
+/* Estilos para elementos de Contacto */
 
-#h3-p-vinotinto p {
-  color:#ffffff;
-}
-
-#h3-p-vinorosado p {
-  color:#ffffff;
-}
-
-/* Estilos para Formulario */
-  
   .formulario {
-    width: 500px;
-    max-width: 100%;
+    width: 100%;
     margin: auto;
-    margin-top: 30px;
-    padding: 20px;
-    box-shadow: 0 0 20px 1px rgb(56, 8, 8);
+    padding: 8%;
     position: relative;
 
 }
 
 .formulario__titulo {
     text-align: center;
-    margin-top: 0;
-    color: rgba(0,0,0,0.7);
+    padding-bottom: 8%;
+    color: #640101;
 }
 
 .formulario__input, .formulario__label, 
 .formulario__submit {
   display: block;
   width: 100%;
-  font-size: 1.3em;
+  font-size: 150%;
 }
 
 .formulario__input {
-    padding: 20px;
-    background: rgba(162,202,144,0.2);
-    border: 1px solid rgba(0,0,0,0.3);
-    margin-bottom: 40px;
+    padding: 3%;
+    background: rgba(234, 159, 159, 0.2);
+    border: 1px solid  #640101;
+    border-radius: 20px;
+    margin-bottom: 4%;
 }
 
 .formulario__input:focus {
-    outline: 1px solid rgba(0,0,0,0.7);
+    outline: 1px solid  #640101;
 }
 
 .formulario__input:focus + 
 .formulario__label {
-  margin-top: -135px;
+  margin-top: -13%;
 }
 
 .formulario__label {
-    padding-left: 15px;
+    padding-left: 5%;
     position: absolute;
-    margin-top: -85px;
-    z-index: -20;
-    color: rgba(0,0,0,0.5);
+    margin-top: -9%;
+    
+    color: #640101;
     transition: all 0.2s;
 }
 
 .formulario__submit {
-    background: rgba(0,0,0,0.7);
+    background: #640101;
     color: white;
-    padding: 10px 20px;
+    padding: 3%;
     cursor: pointer;
-    border: none;
+    border-radius: 20px;
 }
 
 .fijar {
-    margin-top: -135px;
+    margin-top: -40%;
 }
