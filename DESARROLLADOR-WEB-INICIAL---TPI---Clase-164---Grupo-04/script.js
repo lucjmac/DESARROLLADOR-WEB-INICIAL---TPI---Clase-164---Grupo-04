@@ -8,3 +8,8 @@ for (var i = 0; i < inputs.length; i++) {
        }
     });
 }
+
+function toggleMenu() {
+    var menu = document.querySelector('.menu');
+    menu.classList.toggle('show');
+  }

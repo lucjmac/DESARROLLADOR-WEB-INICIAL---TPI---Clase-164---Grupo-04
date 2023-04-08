@@ -25,7 +25,14 @@ header {
   align-items: center;
 }
 
+header img {
+  width: 5%; 
+  margin-right: 1%; 
+  margin-left: 2%;
+}
+
 header p {
+  flex: 1;
   margin-left: 2%;
   color:#fff;
   font-size: 25px;
@@ -83,6 +90,17 @@ nav ul li a:hover {
   
   nav ul li {
     margin: 10px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .menu-toggle {
+    display: block;
   }
 }
 
