@@ -535,3 +535,67 @@ nav ul li a:hover {
 .fijar {
     margin-top: -40%;
 }
+
+.pie-pagina{
+  width: 100%;
+  background-color: #640101;
+}
+
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: cnter;
+
+}
+.pie-pagina .grupo-1 .box figure img{
+  width: 150px;
+}
+.pie-pagina .grupo-1 .box h2{
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+
+}
+.pie-pagina .grupo-1 .box p{
+  color: #ffffff;
+  margin-bottom: 10px;
+
+}
+.pie-pagina .grupo-1 .red-social i{
+display: inline-block;
+text-decoration: none;
+width: 45px;
+height: 45px;
+line-height: 45px;
+color: #fff;
+margin-right: 10px;
+background-color:#640101;
+text-align: center;
+transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social i:hover{
+  color: gray;
+}
+
+.pie-pagina .grupo-2{
+  background-color: #640101;
+  padding: 15px 10px;
+  text-align: cnter;
+  color: #fff;
+
+}
+
+.pie-pagina .grupo-2 small{
+  font-size: 15px;
+  }
